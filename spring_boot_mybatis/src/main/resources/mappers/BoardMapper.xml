@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+  
+  <mapper namespace="com.spring_boot_mybatis.project.dao.IBoardDAO">
+  	<resultMap id="boardResult" type="com.spring_boot_mybatis.project.model.BoardVO" >
+  		<result property="bNo" column="bNo"  />
+  		<result property="bTitle" column="bTitle"  />
+  		<result property="bWriter" column="bWriter"  />
+  		<result property="bPassword" column="bPassword"  />
+  		<result property="bContent" column="bContent"  />
+  		<result property="bDate" column="bDate"  />
+  	</resultMap>
+  	
+  	<!-- 전체 게시글 조회 -->
+<!--   	<select id="listAllBoard" resultMap="boardResult">
+  		SELECT * FROM board ORDER BY bNo
+  	</select> -->
+  	<select id="listAllBoard" parameterType="hashmap" resultType="com.spring_boot_mybatis.project.model.BoardVO">
+  		SELECT * FROM board LIMIT #{startNo}, 10;  		
+  	</select>
+  	
+  	<select id="getBoardCount" resultType="int">
+  		SELECT count(*) FROM board
+  	</select>
+  
+  
+<select id="getBoardMaxNo" resultType="int">
+  		SELECT max(bNo) FROM board
+  	</select> 
+  </mapper>
+  
+  
+  
+  
+  
+  
+  
+  
