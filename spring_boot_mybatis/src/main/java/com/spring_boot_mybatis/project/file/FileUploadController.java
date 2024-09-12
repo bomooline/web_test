@@ -26,8 +26,8 @@ public class FileUploadController {
 		
 		// 1. 파일 저장 경로 설정
 		// 맨 마지막에 / 있어야 함
-		//String uploadPath = "C:/springWorkspace/upload/"; // 로컬 경로
-		String uploadPath = "/usr/local/project/upload/"; // 서버 경로
+		String uploadPath = "C:/springWorkspace/upload/"; // 로컬 경로
+		//String uploadPath = "/usr/local/project/upload/"; // 서버 경로
 		
 		// 2. 원본 파일 이름 저장
 		String originalFileName = file.getOriginalFilename();
@@ -59,8 +59,8 @@ public class FileUploadController {
 		
 		// 1. 파일 저장 경로 설정
 		// 맨 마지막에 / 있어야 함
-		//String uploadPath = "C:/springWorkspace/upload/";
-		String uploadPath = "/usr/local/project/upload/";
+		String uploadPath = "C:/springWorkspace/upload/"; // 로컬 경로
+		//String uploadPath = "/usr/local/project/upload/"; // 서버 경로
 		
 		// 여러 개의 파일 이름을 저장한 리스트 변수 생성
 		ArrayList<String> originalFileNameList = new ArrayList<String>();
@@ -98,8 +98,8 @@ public class FileUploadController {
 		
 		// 1. 파일 저장 경로 설정
 		// 맨 마지막에 / 있어야 함
-		//String uploadPath = "C:/springWorkspace/upload/";
-		String uploadPath = "/usr/local/project/upload/";
+		String uploadPath = "C:/springWorkspace/upload/"; // 로컬 경로
+		//String uploadPath = "/usr/local/project/upload/"; // 서버 경로
 		
 		// 2. 원본 파일 이름 저장
 		String originalFileName = file.getOriginalFilename();
@@ -133,8 +133,8 @@ public class FileUploadController {
 		
 		// 1. 파일 저장 경로 설정
 		// 맨 마지막에 / 있어야 함
-		//String uploadPath = "C:/springWorkspace/upload/";
-		String uploadPath = "/usr/local/project/upload/";
+		String uploadPath = "C:/springWorkspace/upload/"; // 로컬 경로
+		//String uploadPath = "/usr/local/project/upload/"; // 서버 경로
 		
 		// 2. 원본 파일 이름 저장
 		String originalFileName = file.getOriginalFilename();

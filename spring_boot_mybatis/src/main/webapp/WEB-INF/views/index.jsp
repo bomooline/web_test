@@ -40,6 +40,11 @@
 	
 		<!--  서버 테스트 -->
 		<a href="<c:url value='/ocrForm'/>">OCR</a><br><br>
+		
+		<!--  파이썬 : Fish Detect 테스트 -->
+		<a href="<c:url value='/fishDetectForm'/>">Fish Detect</a><br><br>
+		
+		<a href="<c:url value='/map' />">MAP</a><br><br>
 	</body>
 </html>
 

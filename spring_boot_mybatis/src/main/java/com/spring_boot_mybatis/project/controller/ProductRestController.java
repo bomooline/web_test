@@ -54,4 +54,34 @@ public class ProductRestController {
 		return result;
 	}
 	
+	// fish_detect 가짜 api
+	@RequestMapping("/file_upload")
+	public String file_upload(@RequestParam("uploadFile") MultipartFile file){	
+		String result = "";
+		String originalFileName = file.getOriginalFilename();
+		
+		if(originalFileName.contains("갈치")) {
+			result =  "갈치";
+		} else if (originalFileName.contains("감성돔")) {
+			result =  "감성돔";
+		} else if (originalFileName.contains("gwang")) {
+			result =  "광어";
+		} else if (originalFileName.contains("돌돔")) {
+			result =  "돌돔";
+		} else if (originalFileName.contains("볼락")) {
+			result =  "볼락";
+		} else if (originalFileName.contains("bb")) {
+			result =  "붉바리";
+		} else if (originalFileName.contains("전갱이")) {
+			result =  "전갱이";
+		} else if (originalFileName.contains("참돔")) {
+			result =  "참돔";
+		} else {
+			result ="볼락";
+		}
+		
+		return result;
+	}
+	
+	
 }

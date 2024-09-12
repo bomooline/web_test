@@ -247,6 +247,12 @@ public class ProductController {
 	public String ocrForm() {
 		return "ocrView"; // ocrView 없음
 	}
+	
+	// MAPS
+	@RequestMapping("/map") 
+	public String MAP() {
+		return "mapView";
+	}
 
 }
 
