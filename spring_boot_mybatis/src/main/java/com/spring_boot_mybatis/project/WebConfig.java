@@ -11,7 +11,8 @@ public class WebConfig implements WebMvcConfigurer {
 	@Override
 	public void addCorsMappings(CorsRegistry registry) {
 		registry.addMapping("/**")
-		.allowedOrigins("http://localhost:8080", "http://localhost:8000");
+		.allowedOrigins("http://localhost:8080", "http://localhost:8000", 
+				"http://101.101.211.65:8080", "http://0.0.0.0:8080");
 	}	
 	
 	@Override
@@ -27,4 +28,6 @@ public class WebConfig implements WebMvcConfigurer {
 		//.addResourceLocations("file:///usr/local/project/upload/"); // 서버 경로
 		.addResourceLocations("file:///C:/springWorkspace/upload/");
 	}
+	
+	
 }

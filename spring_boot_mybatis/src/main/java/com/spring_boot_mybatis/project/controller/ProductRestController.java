@@ -6,6 +6,7 @@ import java.util.ArrayList;
 import java.util.HashMap;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
@@ -15,7 +16,7 @@ import com.spring_boot_mybatis.project.model.ProductVO;
 import com.spring_boot_mybatis.project.service.OCRService;
 import com.spring_boot_mybatis.project.service.ProductService;
 
-
+@CrossOrigin("*")
 @RestController
 public class ProductRestController {
 	@Autowired

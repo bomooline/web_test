@@ -15,7 +15,7 @@
  		$.ajax({
  			type:"post",
  			//url:"http://127.0.0.1:8000/file_upload/",  
- 			url:"http://127.0.0.1:8080/file_upload",  
+ 			url:"http://101.101.211.65:8080/file_upload",  
  			enctype: 'multipart/form-data',
  			processData:false,
  			contentType:false,
